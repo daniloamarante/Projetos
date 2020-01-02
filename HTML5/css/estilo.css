@@ -1,0 +1,62 @@
+
+/************** Formatação de estilos *********/
+
+header {
+	color: #ccc;
+	border: 1px solid green;
+}
+
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+	nav {
+	width: 150px;
+	background: orange;
+	height: 150px;
+	margin: 5px;
+
+}
+
+	nav ul{
+	list-style: none;
+	letter-spacing: 3px;
+	line-height: 36px;
+}
+
+	nav a{
+	font-size: 0.8em;
+	text-decoration: none;
+	color: #FFF;
+	text-transform: uppercase;
+	font-weight: bold;
+	border: 1px solid #F8CB4C;
+	display: block;
+	text-align: center;
+}
+
+	nav a:hover {
+	background: #FCDE1E;
+	color: #fff;
+	cursor: pointer;
+	display:block;
+}
+
+/************** Navegação Horizontal *************/
+
+
+article {
+	background: #ccc;
+	width: 400px;
+}
+
+section{
+	padding: 5px 10px 5px 10px;
+	border-bottom: 1px dotted #fff;
+}
+
+footer{
+	background: pink;
+}
+

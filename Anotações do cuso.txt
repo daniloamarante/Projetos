@@ -1,0 +1,189 @@
+Estrutura Padrão de HTML 5
+
+<!doctype html lang: pt-br>
+
+<html>
+
+<head>
+
+
+<\head>
+
+<body>
+
+<\body>
+</html>
+-----------------------------------------------------
+Inserir imagem
+
+<img.src="">
+------------------------------------------------------
+Inserir links
+ <a>href=""</a>
+
+__________________________________________________________
+Inserir Tabelas
+<table>border=""
+<tr> (linha) </tr>
+<td>(colunas)</td>
+<th>Titulo</th>
+</table>
+
+<\html>
+---------------------------------------------------------------
+
+Align ou Text Align - Center/ Left /Rigth  alinhamento de texto
+___________________________________________________________
+Font Size - Tamanho
+Font Family - Tipo de Fonte
+FOnt Style _ italico , sublinhado
+Fonte Weight - % de negrito;
+text-decoration underline , overline, none, line-trought
+____________________________________________________________
+Inserir Imagem de FUndo
+
+Background-image: Url("")
+Bakcground Repeat ( x , Y)(Horizontal, Vertical)
+Attatchment: Fixo ou Movel (Fixed, Scroll)
+Position : Center, Left, Right;
+______________________________________________________________________
+Sobrepor Elementos
+z-index (maior numero fica a frente)
+______________________________________________________________________
+Links
+
+não visitados (a:link)
+visitados ( visited:)
+hover (passou o mouse em cima muda de cor)
+active (ativos)
+
+Inserir imagem de fundo
+url(../imagens/menu.png)
+----------------------------------------------------------
+Text- uppercase ( deixar as letras em maiusculo)
+-----------------------------------------------------------
+letter-spacing ( espaçamento entre as letras)
+--------------------------------------------------------------
+Margem negativa "sobrepõe" a imagem  exemplo margin: -3000
+--------------------------------------------------------------
+Placehollder (aparece mensagem dentro da caixa de texto do form)
+----------------------------------------------------------------
+Reconhecer uma fonte: @font-face 
+Font-Family: "Road Rage" ( exemplo)
+src: url("../fontes se tiver pasta /nome_da_fonte")
+------------------------------------------------------------
+Border-radius deixa os cantos arredondados 
+Box-Sizing - Deixa o tamanho da caixa fixo independente do Padding
+__________________________________________________________________
+Position: Absolute ( Mantem a imagem fixa ) da pra posicionar com 
+Left Rigth top bottom
+Position: Relative ( Posicionamento flexivel , da para flutuar)
+___________________________________________________________________
+Prefixo 
+
+-Webkit-
+-moz- 
+-o-
+Navegadores não reconhecem alguns comandos CSS3
+-------------------------------------------------------------------
+APlicar cores RGB:  rgb: ()
+RGBA ( O A define a transparencia / opacidade)
+---------------------------------------------------------------------
+Linear gradient ( define o degradê , pode ser posicionado )
+ex: to left ( para a esquerda) to right( para direita)
+radial-gradient : ( deixa o degradê arredondado)
+------------------------------------------------------------------
+Opacity ( Define transparencia)
+1.0 menor opacidade 0 maior opacidade - quase branco
+pode ser medida em porcentagem.
+------------------------------------------------------------------
+			   SOMBRAS
+Text-Shadow: Efeito de sombra ( a sombra aparece por tras do texto)
+movimenta ( exemplo: 1px 2px o primeir numero quando for + movimenta
+pra esquerda e negativo para esquerda)
+no segundo valor movimenta pra cima e para baixo.( - pra cima + baixo)
+Box-shadown : aplica a sombra na Div (CAIXA)
+o 3º valor Blur define o Borrado da caixa ou do texto
+o 4º valor espalha a sombra da Caixa.
+-------------------------------------------------------------------
+                          ANIMAÇÕES
+Incluir uma animação: @keyframes nome da animação{
+	Estilo Inicial
+	from{}  
+	
+	Estilo Final
+	to {}	
+Animações utilizam os prefixos webkit, moz e o para funcionar em outros
+Browsers, tanto a tag de criação quanto as propriedades.
+
+animation-name: nome da animação
+animation-duration: duração da animação
+animation-delay: tempo para começar a animação
+animation-iteration-count: num de vezes q se repete
+animation-direction: define forma de execução da animação
+(alternate , reverse)
+-------------------------------------------------------------------
+			TRANSIÇÕES
+transition: faz a transição entre um efeito e outro, exemplo:
+transition: widht 3s, background 3s , aqui nos definimos o efeito
+e o tempo de transição deles.
+As transições também utilizam os prefixos para funcionar em outros NAV.
+-----------------------------------------------------------------------
+		NOVAS TAGS HTML 5
+
+header: tag de cabeçalho
+nav: tag de navegação
+footer: tag de rodapé
+article: define uma area de postagem
+section: define divisões entre as postagens 
+time: tag utilizada para definir data e hora
+Aside: Tag para conteudo lateral
+
+Essas tags são utilizadas para identificar melhor o documento
+leitores de texto para acessibilidade entenderão melhor
+-----------------------------------------------------------------------
+			FORMULÁRIOS
+
+Inserir fomulário (Basico)
+<form>
+		Login:<br>
+		<input type="text" name="login"><br>
+
+		Senha:<br>
+		<input type="password" name="senha"><br>
+		<input type="button" value="Entrar">
+
+</form> (tipos: Text, Password, Button, Submit, select(option), Radio,checkbox,select,textarea)
+
+	(email, number, url, search, range, date, color
+).
+
+fieldset ( agrupa dados de formulário)
+legend: define o titulo 
+label : define a descrição
+
+Atributos: required, autofocus, step,
+---------------------------------------------------------------
+		Flexbox
+Colocar o display como FLEX
+
+Flex-direction
+
+flex-direction: row;
+/*row/row-reverse/column/column-reverse*/
+
+flex-wrap: nowrap;
+/*wrap/nowrap/wrap-reverse	*/
+
+justify-content: space-around;
+/*Center/space-betwen/space-around/flex-start/flex-end*/
+
+align-items:  baseline;
+/*stretch/center/flex-start/flex-end/baseline*/
+
+flex-grow = define a proporção que a caixa vai ocupar. Quanto maior 
+o numero mais ele expande.
+
+flex-shrink = faz o inverso quanto maior o numero mas reduz
+o tamanho da caixa;
+------------------------------------------------------------------------------------

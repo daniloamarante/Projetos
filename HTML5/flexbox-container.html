@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Flexbox Layout</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			
+			#conteudo{
+				background: #dcdcdc;
+				height: 400px;
+				display: flex;
+			
+				/*flex-direction: row;*/
+			/*row/row-reverse/column/column-reverse*/
+				/*flex-wrap: nowrap;*/
+			/*wrap/nowrap/wrap-reverse	*/
+			justify-content: space-around;
+			/*Center/space-betwen/space-around/flex-start/flex-end*/
+			/*align-items:  baseline;*/
+			/*stretch/center/flex-start/flex-end/baseline*/
+			}
+				
+			.item{ 
+				background: #fff;
+				border: 1px solid gray;
+				width: 250px;
+				height: 100px;
+				margin: 10px;
+				flex-grow: 0;
+
+			}
+
+			.ordem {
+				order: -1;
+			}
+
+			.item1{
+				/*flex-grow: 1;*/
+				flex-shrink: 2;
+			}
+
+			.item2{
+				/*flex-grow: 1;*/
+				flex-shrink: 4;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<h1>Flexbox</h1>
+		<div id="conteudo">
+		<div class="item item1">01</div>
+		<div class="item">02</div>
+		<div class="item ordem">03</div>
+		<div class="item item2">04</div>	
+			
+			
+			
+			
+		</div>
+	</body>
+	</html>
