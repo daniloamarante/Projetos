@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<title>App Game Mata Mosquito</title>
+
+		<!-- Bootstrap início -->
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+		<!-- Estilo CSS -->
+		 <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+		 <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    
+
+		 <script type="text/javascript">
+		 	function iniciarJogo() {
+		 		
+		 		var nivel = document.getElementById('nivel').value
+
+		 		if (nivel === '') {
+		 			alert ('Selecione um nivel para iniciar o jogo')
+		 			return false
+		 		}
+
+		 		window.location.href = 'app.html?' + nivel
+		 	}
+
+		 	
+		 </script>
+
+	</head>
+	<body>
+
+		<!-- Imagem Inicial -->
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="d-flex justify-content-center">
+						<img src="imagens/game.png">	
+					</div>
+					
+				</div>
+
+			<div class="container">	
+			<div class="row">
+				<div class="col">
+					<div class="d-flex justify-content-center">
+						<div class="mb-2">
+							<select class="form-control" id="nivel">
+							<option value="">-- Selecione o nível --</option>
+							<option value="normal">Normal</option>
+							<option value="dificil">Dificil</option>
+							<option value="chucknorris">Chuck Norris</option>
+						</select>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			</div>
+
+
+			
+			<!-- Botão Iniciar jogo -->	
+			<div class="container">	
+				<div class="row">
+					<div class="col">
+						<div class="d-flex justify-content-center">
+							<button class="btn btn-danger btn-lg" onclick="iniciarJogo()">Iniciar Jogo</button>
+					</div>
+					
+				</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+	</html>
